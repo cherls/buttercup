@@ -7,11 +7,9 @@ class ImageDrifter {
     this.movingRight = true;
 
     this.resizeImage();  
-    this.setDimensions();  
-    console.log(`${this.img.alt} is: ${this.imageWidth}px x ${this.imageHeight}px`);  
-    console.log("READY");  
-  
-    this.img.addEventListener("click", () => this.startDrift());  
+    this.setDimensions();
+    this.startDrift();
+    
     window.addEventListener("resize", () => this.resizeImage());  
   }  
   
